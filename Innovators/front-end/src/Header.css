@@ -1,0 +1,162 @@
+.Header-body{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    background-color: #931a25;
+}
+
+
+.Header-content{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:space-between;
+    flex:0.5;
+}
+
+.Header-logo>img{
+    height:60px;
+    width: 180px;
+}
+
+
+.Header-login{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+.Header-login>button{
+    color: black;
+    background-color: transparent;
+    font-size: 26px;
+    border: none;
+}
+.Header-menu-icon{
+    display: none;
+}
+
+.Header-Menu-content{
+    visibility: hidden;
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(0,0.5,1,0.8);
+}
+.Header-Mini-Menu{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+}
+
+.Header-login>button:hover{
+    color: white;
+}
+
+.Header-Mini-Menu-login>button:hover{
+    color: white;
+}
+
+@media(max-width:1025px){
+    .Header-body{
+    justify-content: center;
+    }
+  .Header-menu-icon{
+      display: initial;
+      position: absolute;
+      right: 0;
+      margin: 8px 0 0 0;
+  }
+  .Header-Menu-content{
+      visibility: unset;
+  }
+  
+    .Header-content{
+        display: none;
+    }
+    .Header-login{
+        display: none;
+    }
+    .Header-Mini-Menu-login{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+    }
+    .Header-Mini-Menu-login>button{
+        color: black;
+        background-color: transparent;
+        font-size: 26px;
+        border: none;
+    }
+}
+/* --------------------------------------------------- */
+
+.Body-Login-Template{
+    display: flex;
+    flex-flow: column nowrap;
+    height: 270px;
+    width: 30%;
+    z-index: 1001;
+    position: absolute;
+    top:28%;
+    left: 38%;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(44,44,44,0.7);
+    border-radius: 5px;
+    align-items: center;
+}
+.Body-Login-Template-close-btn{
+    position: absolute;
+    right: 2px;
+    top: 4px;
+}
+.Body-Login-Template>form{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 80%;
+}
+.Body-Login-Template>form>input{
+    border-radius: 4px;
+    margin-top: 2px;
+    border: none;
+    height: 40px;
+}
+.Body-Login-Template>form>input::placeholder{
+    text-align: center;
+}
+.Body-Login-Template>form>button{
+    background-color: rgb(52, 112, 233);
+}
+.Google-Login{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+.Google-Login>h6{
+    color: white;
+    align-self: center;
+}
+
+@media(max-width:1000px){
+    .Body-Login-Template{
+        width:40%;
+        left: 28%;
+    }
+}
+@media(max-width:660px){
+    .Body-Login-Template{
+        width:50%;
+    }
+}
+@media(max-width:500px){
+    .Body-Login-Template{
+        width:60%;
+        left: 20%;
+    }
+}
+@media(max-width:360px){
+    .Body-Login-Template{
+        width:80%;
+        left: 10%;
+    }
+}
+

@@ -1,0 +1,41 @@
+
+* {
+    margin: 0;
+}
+@keyframes bouncing{
+    0%  { bottom: 150px; box-shadow: 0 0 5px rgba(0,0,0,0.5);}
+    100%{ bottom: 170px; box-shadow: 0 50px 50px rgba(0,0,0,0.1);}
+  }
+
+.chat-icon{
+    animation: bouncing 0.05s cubic-bezier(0.1,0.25,0.1,1) 0s 31 alternate both;
+    color: rgb(4, 158, 4);
+    background-color: rgb(255, 153, 0);
+    padding: 0.5rem;
+    border-radius: 50%;
+    transform: rotateZ(720deg);
+    transition:  1s ease-out;
+    z-index: 1000;
+}
+
+.chat-icon:hover{
+    transform: rotateZ(360deg);
+    transition:  0.5s ease-out;
+}
+.chat-icon>.MuiSvgIcon-root{
+    font-size: 50px;
+}
+.chat-setup{
+    position: absolute;
+    right: 1%;
+    bottom: 4%;
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    align-items:flex-end;
+}
+
+@media(max-width:1024px){
+    .chat-icon>.MuiSvgIcon-root{
+        font-size: 30px;
+    }
+}

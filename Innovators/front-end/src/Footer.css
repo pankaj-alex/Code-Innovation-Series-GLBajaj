@@ -1,0 +1,57 @@
+.Footer{
+    width: 100%;
+    height: 45vh;
+    background-image: url("./image/war.png");
+}
+
+.Footer-body{
+    background-color: #4c4c4c;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    opacity: 0.991;
+}
+
+.Footer-body-upper, .Footer-body-lower{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.Footer-body-follow{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    height: 10vh;
+    width: 30vh;
+    background-color: transparent;
+}
+
+
+.Footer-body-follow>img{
+    width: 30px;
+    height: 50px;
+}
+
+.Footer-body-follow-text>h5{
+    text-align: center;
+}
+
+@media(max-width:1024px){
+    .Footer-body-follow{
+        width: 25vw;
+    }
+}
+@media(max-width:414px){
+    .Footer-body-follow{
+        width: 25vw;
+    }
+    .Footer-body-team>h5,.Footer-body-policy>h5,.Footer-body-lower>h5, .Footer-body-follow-text>h5{
+        font-size: 16px;
+    }
+    .Footer-body-team>h3{
+        font-size: 22px;
+    }
+}
